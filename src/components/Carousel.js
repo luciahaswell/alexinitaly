@@ -25,7 +25,8 @@ const Carousel = ({ imageList }) => {
                 &#x2039;
             </button>
             <img className='carouselImage'
-                src={imageList[currentImageIndex]} />
+                src={imageList[currentImageIndex]} 
+                alt='pictures from the the city'/>
             <button
                 className='carousel-button next'
                 onClick={prevImage}

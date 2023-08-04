@@ -24,7 +24,8 @@ function CityPreview({ cityName, index, vibes, moneyLevel,regionPhoto}) {
         {!isHovered && (
           <>
             <div className="cityPreviewImageContainer">
-              <img src={regionPhoto}/>
+              <img src={regionPhoto}
+              alt='region'/>
             </div>
             <div className="cityNamePreview">
               <h3>{cityName.toUpperCase()}</h3>

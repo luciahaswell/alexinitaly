@@ -11,7 +11,8 @@ return (
     <div className='navBar'>
         <div className='italyImageContainer'>
             <img src={require('../media/NavBar/italyOutline.PNG')}
-                className='italyImage'></img>
+                className='italyImage'
+                alt='outline of italy map'></img>
         </div>
         <div className='webName'>
             <Link className='navSection' to="/">Alex in Italy</Link>

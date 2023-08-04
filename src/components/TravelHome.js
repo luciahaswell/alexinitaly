@@ -25,7 +25,8 @@ function TravelHome() {
                 <div className='travelSection'>
                     <div className='mapImageContainer'>
                         <img src={require(`../media/regionMap/${mapImageLink}.PNG`)}
-                            className='travelMap'></img>
+                            className='travelMap'
+                            alt='interactive map of italy'></img>
                     </div>
                     <RegionList 
                         highlightRegion={highlightRegion}

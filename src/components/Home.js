@@ -20,7 +20,7 @@ const Home = () => {
 
         return () => 
         clearInterval(timerId);
-    }, [homePageImages]);
+    });
 
 
     return (
@@ -40,6 +40,7 @@ const Home = () => {
                     <img
                         src={homePageImages[currentIndex]}
                         className={`splashImage`}
+                        alt='images from italy'
                     />
                 </CSSTransition>
                 </TransitionGroup>

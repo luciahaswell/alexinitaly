@@ -29,7 +29,8 @@ function AboutGrant() {
                 <div className='grantImageContainer'>
                     <img 
                         className='aboutGrantLogo'
-                        src={require("../media/aboutGrant/Barancik-Foundation-Logo.jpg")}/>
+                        src={require("../media/aboutGrant/Barancik-Foundation-Logo.jpg")}
+                        alt='barancik foundation logo'/>
                 </div>
 
             </div>

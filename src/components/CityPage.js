@@ -19,8 +19,16 @@ const CityPage = ({ cityName, aboutTheCity, whereToStay, whatToEat, whatToDo, to
 
             <h3>Where to Stay:</h3>
             {whereToStay.map((location) =>
-                <p className='locationLink'>{'-'}<a href={location.link}
-                    target="_blank">{`${location.locationName}`}</a>{`: ${location.description}`}</p>
+                <p className='locationLink'>{'-'}
+                    <a href={location.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        >
+                        {`${location.locationName}`}
+
+                    </a>
+                        {`: ${location.description}`}
+                </p>
             )}
 
             <h3>What to Eat:</h3>
@@ -30,8 +38,15 @@ const CityPage = ({ cityName, aboutTheCity, whereToStay, whatToEat, whatToDo, to
             )}
             <h4>Restaurants:</h4>
             {whatToEat.restaurants.map((place) =>
-                <p>{'-'}<a href={place.link}
-                    target="_blank">{`${place.name}`}</a></p>
+                <p>{'-'}
+                    <a href={place.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        >
+                            {`${place.name}`}
+   
+                    </a>
+                </p>
             )}
 
             <h3>What to Do:</h3>

@@ -8,7 +8,8 @@ function AboutMe() {
                 <div className='meImageContainer'>
                     <img 
                         className='meImage'
-                        src={require("../media/aboutMe/IMG_5071.jpeg")} />
+                        src={require("../media/aboutMe/IMG_5071.jpeg")}
+                        alt='alex catena' />
                 </div>
                 <div className='bio'>
                     <p>
