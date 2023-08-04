@@ -1,38 +1,627 @@
-.App {
+@font-face {
+  font-family: 'Portobello';
+  src: url('../src/media/fonts/Portobello.otf') format('opentype');
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+/* ----------- text settings --------*/
+h1 {
+  color: #CDA67A;
+  font-weight: 600;
+  font-size: 80px;
+  font-family: 'Portobello';
+}
+
+h2 {
+  color: white;
+  font-size: 55px;
+  font-family: 'Portobello';
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Urbanist', sans-serif;
+}
+
+h4 {
+  color: white;
+  font-size: 23px;
+  font-family: 'Urbanist', sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+  
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 650px){
+  h1{
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 49px;
+  }
+  
+  h3 {
+    font-size: 27px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+
+}
+
+
+/* ---------------- navBar ---------------*/
+.navBar {
+  display: inline-flex;
+  width:100%;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: solid 1px #474241;
+  height: 85px;
+  align-content: center;
+  justify-content: center;
+}
+
+.italyImage {
+  width: 50px;
+  height: 57px;
+}
+
+.italyImageContainer {
+  width: 8%;
+  margin: 15px 0 0 5%;
+}
+
+.webName {
+  text-align: center;
+  width: 40%;
+  color: white;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.webSections {
+  text-align: right;
+  width: 40%;
+  margin-top: 30px;
+  margin-right: 5%;
+}
+
+.navSection.hidden{
+  display: none;
+}
+
+.navSection {
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+.current-page {
+  color:#474241;
+}
+a.navSection{
+  font-size: 20px;
+  width: auto;
+  font-weight: 200;
+  font-family: 'Urbanist', sans-serif;
+}
+
+/*-------------- responsive design for navBar -------------*/
+
+@media only screen and (max-width: 800px){
+  .italyImageContainer{
+    display: none;
+  }
+
+  .webName{
+    display: none;
+  }
+
+  .navSection.hidden{
+    display: inline-block;
+  }
+
+  .webSections{
+    width: 100%;
+    text-align: center;
+    margin: 25px auto;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  a.navSection{
+    font-size: 18px;
+  }
+
+}
+
+/* ---------------------- homePage ------------------------*/
+
+.homePage {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 84px);
+  overflow: hidden;
+  margin: 0px 0px;
+}
+
+.heroText {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 5%;
+
+}
+
+.heroText > h1 {
+  color: white;
+  font-weight: 200;
+}
+
+.heroImageContainer {
+  height: 100%;
+  width: 50%;
+  display: inline-flex;
+  position: relative;
+  margin-right:0px;
+  align-items: flex-start;
+  flex-grow: 1;
+  overflow: hidden;
+  object-fit: cover;
+
+}
+
+.splashImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+
+
+}
+
+/* -------------exit transition-------- */
+.imageChange-exit{
+  opacity: 1;
+
+}
+
+.imageChange-exit-active{
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+
+.imageChange-enter{
+  opacity: 0;
+}
+
+.imageChange-enter-active{
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+
+}
+
+/*-------------- responsive design for homePage -------------*/
+
+@media only screen and (max-width: 800px){
+  .homePage{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .heroText {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: auto;
+  }
+
+  .heroText > h1 {
+  font-size: 60px;
+  padding: 15px;
+  }
+
+  .heroImageContainer {
+    height: 100%;
+    width: 100%;;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .splashImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+
+  }
+}
+
+
+/* -----------nav pages general ---------------*/
+.pageTitle {
+  text-align: center;
+  margin: 0px 5%;
+}
+
+/*---------------travel--------------------------*/
+
+.travelSection {
+  display: inline-flex;
+  margin: 15px auto;
+  width: 80%;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.mapImageContainer {
+  height: calc(100vh - 280px);
+  width: auto;
+}
+
+.travelMap {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.regionList {
+  width: 40%;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.regionList li {
+  list-style-type:none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h3 .regionLink {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+}
+
+.test {
+  display: flex;
+  align-content: center;
+}
+
+h3 .regionLink:hover {
+  list-style-type: none;
+  color: #474241;
+}
+
+@media only screen and (max-width: 700px){
+  .mapImageContainer {
+    display: none;
+  }
+  .regionList {
+    width: 100%;
+
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media only screen and (max-width: 650px){
+}
+
+/*--------------region---------*/
+.regionTitle {
+  text-align: center;
+  margin: 0 5%;
+}
+
+.aboutRegion {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.cityPreviewContainer {
   display: flex;
   flex-direction: column;
+  padding: 0px 0%;
+  justify-content: center;
+}
+
+/*--------------- city preview -----------------*/
+
+.backButton {
+  padding-top: 15px;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.backButton > h4:hover {
+  cursor: pointer;
+  color: #474241;
+}
+
+.cityLink {
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  margin: auto;
+}
+
+.cityTitle {
+  text-align: center;
+}
+
+.cityPreview {
+  height: 300px;
+  width: 80%;
+  margin: 3% auto;
+  overflow: hidden;
+  transition: 40ms;
+}
+
+.even.cityPreview {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.odd.cityPreview {
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+.cityPreviewImageContainer {
+  height: 300px;
+  width: 50%;
+}
+
+.cityPreviewImageContainer > img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.cityNamePreview {
+  width: 50%;
+  display: flex;
+  height: 300px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* ------------- responsive design for city preview ------------*/
+
+@media only screen and (max-width: 650px){
+  .cityNamePreview h3 {
+    background-color: #47424163;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .cityNamePreview {
+    position: absolute;
+    background-color: #aba89900;
+    width: 80%;
+  }
+
+  .cityPreviewImageContainer {
+    width:100%;
+  }
+}
+
+/* ------------ hover div -----------------*/
+
+.hoverDiv {
+  background-color: #a2a895;
+  position: relative;
+  height: 300px;
+  top: -20px;
+  width: 100%;
+  margin: 3% auto;
+  transition: 40ms;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.hoverDiv > h2{
+  background-color: #a2a895;
+  text-align: center;
+  font-family: "Portobello";
+  font-weight: 800;
+}
+
+.hoverDiv > h4{
+  background-color: #a2a895;
+  text-align: center;
+  padding: 0 120px;
+}
+
+
+
+/* ------------ city page -----------------*/
+
+.cityPage {
+  text-align: center;
+  margin: 0 10%;
+  padding-bottom: 80px;
+}
+
+.carousel{
+  height: 550px;
+  width: auto;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.cityPage > h3{
+  color:#CDA67A;
+  padding-top: 15px;
+}
+
+.cityPage > h4 {
+  color:#474241;
+}
+
+.cityPage > p > a{
+  text-decoration: underline;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/*--------carousel -----------*/
+
+.carouselImage{
+  height: 100%;
+  width: auto;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.carousel > ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slide{
+  height: 5500px;
+  width: auto;
+}
+
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center ;
+}
+
+.carousel-button{
+  background: none;
+  border: none;
+  font-size: 4rem;
+  color: rgba(252, 252, 252, 0.555);
+  cursor: pointer;
+  background-color: #47424136;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  margin: 10px;
+  height: 4rem;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+  color: white;
+  background-color: #47424171;
+}
+
+.carousel-button:focus{
+  outline: 1px solid black;
+}
+
+.carousel-button.prev{
+  top: 518px;
+  left: 30%;
+}
+
+.carousel-button.next{
+  right: 30%;
+  top: 518px;
+}
+
+
+
+/* ------------ about me -----------------*/
+
+.meImageContainer {
+  height: 500px;
+  width: 400px;
+  background-color: beige;
+  margin: 15px auto;
+}
+
+.bio {
+  margin: 5%;
+  color: white;
+}
+
+.meImage{
+  width: 100%;
+  height: auto;
+}
+
+/*----------- responsive design for about me --------*/
+
+@media only screen and (max-width: 650px){
+  .meImageContainer {
+    height: 350px;
+    width: 280px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+/*----------------- about grant ----------*/
+.grantImageContainer {
+  height: 250px;
+  width: 600px;
+  background-color: beige;
+  margin: 15px auto;
+}
+
+.grantInfo {
+  margin: 5%;
+  color: white;
+}
+
+.aboutGrantLogo{
+  height: 100%;
+  width: 100%;
+}
+
+/*----------- responsive design for about grant --------*/
+
+@media only screen and (max-width: 650px){
+  .grantImageContainer {
+    height: 130px;
+    width: 312px;
   }
 }
