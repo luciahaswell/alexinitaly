@@ -13,7 +13,7 @@ function RegionList({highlightRegion,resetMap}) {
 
   return (
     <div className='regionList'>
-      <h2>Regions</h2>
+      <h2 className='regionListTitle'>REGIONS</h2>
       <ul>
         {regionList.map((region) => (
           <li key={region}>

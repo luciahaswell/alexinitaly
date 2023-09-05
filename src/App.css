@@ -13,36 +13,40 @@
 /* ----------- text settings --------*/
 h1 {
   color: #CDA67A;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 80px;
   font-family: 'Portobello';
+  letter-spacing: 2px;
 }
 
 h2 {
   color: white;
   font-size: 55px;
   font-family: 'Portobello';
+  letter-spacing: 2px;
 }
 
 h3 {
   color: white;
   font-size: 30px;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
 }
 
 h4 {
   color: white;
   font-size: 23px;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: rgba(255, 255, 255, 0);
+  font-weight: 200;
   
 }
 
 p {
   color: white;
   font-size: 20px;
-  font-family: 'Urbanist', sans-serif;
-  font-weight: 200;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
 }
 
 @media only screen and (max-width: 650px){
@@ -124,8 +128,8 @@ p {
 a.navSection{
   font-size: 20px;
   width: auto;
-  font-weight: 200;
-  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
 }
 
 /*-------------- responsive design for navBar -------------*/
@@ -198,12 +202,10 @@ a.navSection{
 }
 
 .splashImage {
-  width: 100%;
-  height: auto;
+  height: 91vh;
+  width: 50vw;
   object-fit: cover;
-  object-position: center;
-
-
+  object-position:50%;
 }
 
 /* -------------exit transition-------- */
@@ -275,6 +277,7 @@ a.navSection{
 .pageTitle {
   text-align: center;
   margin: 0px 5%;
+  padding: 15px;
 }
 
 /*---------------travel--------------------------*/
@@ -326,6 +329,10 @@ h3 .regionLink:hover {
   color: #474241;
 }
 
+.regionListTitle{
+  padding: 5px;
+}
+
 @media only screen and (max-width: 700px){
   .mapImageContainer {
     display: none;
@@ -343,11 +350,15 @@ h3 .regionLink:hover {
 .regionTitle {
   text-align: center;
   margin: 0 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .aboutRegion {
   text-align: center;
   padding-bottom: 30px;
+  width: 80%;
+  margin: auto;
 }
 
 .cityPreviewContainer {
@@ -419,6 +430,11 @@ h3 .regionLink:hover {
   justify-content: center;
 }
 
+.cityNamePreview > h3 {
+  font-family: 'Portobello' ;
+  letter-spacing: 2px;
+}
+
 /* ------------- responsive design for city preview ------------*/
 
 @media only screen and (max-width: 650px){
@@ -459,7 +475,8 @@ h3 .regionLink:hover {
   background-color: #a2a895;
   text-align: center;
   font-family: "Portobello";
-  font-weight: 800;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .hoverDiv > h4{

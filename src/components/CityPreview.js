@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function CityPreview({ cityName, index, vibes, moneyLevel,regionPhoto}) {
+function CityPreview({ cityName, index, vibes, moneyLevel,cityPreviewImage}) {
 
     const [isHovered, setIsHovered] = useState(false);
 
@@ -24,7 +24,7 @@ function CityPreview({ cityName, index, vibes, moneyLevel,regionPhoto}) {
         {!isHovered && (
           <>
             <div className="cityPreviewImageContainer">
-              <img src={regionPhoto}
+              <img src={cityPreviewImage}
               alt='region'/>
             </div>
             <div className="cityNamePreview">
@@ -35,7 +35,7 @@ function CityPreview({ cityName, index, vibes, moneyLevel,regionPhoto}) {
   
         {isHovered && (
           <div className="hoverDiv">
-            <h2 classname='hoverCityTitle'>{cityName}</h2>
+            <h2 classname='hoverCityTitle'>{cityName.toUpperCase()}</h2>
             <h4>{`vibes: ${vibes}`}</h4>
             <h4>{moneyLevel}</h4>
           </div>

@@ -20,6 +20,7 @@ function App() {
         <Route path="/aboutgrant" element={<AboutGrant />} />
         <Route path="/travel/*" element={<TravelHome />} />
         {locationData.map((region) => (
+
           <Route
             key={region.regionName}
             path={`travel/${region.regionName}/*`}
@@ -28,10 +29,10 @@ function App() {
                 regionName={region.regionName}
                 regionInfo={region.aboutTheRegion}
                 cityInfo={region.cityInfo}
-                regionPhoto={region.regionPhoto}
               />
             }
           />
+          
         ))}
         {locationData.map((region) =>
           region.cityInfo.map((city) =>

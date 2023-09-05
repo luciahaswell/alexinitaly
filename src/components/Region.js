@@ -2,7 +2,7 @@ import React from 'react';
 import CityPreview from './CityPreview';
 import { Link, useNavigate } from 'react-router-dom';
 
-const Region = ({ regionName, regionInfo, cityInfo,regionPhoto }) => {
+const Region = ({ regionName, regionInfo, cityInfo }) => {
 
     let navigate = useNavigate();
 
@@ -13,10 +13,10 @@ const Region = ({ regionName, regionInfo, cityInfo,regionPhoto }) => {
                 <h4>{`< Regions`}</h4>
             </div>
             <div className='regionTitle'>
-                <h1>{regionName}</h1>
+                <h1>{regionName.toUpperCase()}</h1>
             </div>
             <div className='aboutRegion'>
-                <h3>About the Region:</h3>
+                {/*<h3>About the Region:</h3>*/}
                 <p>
                     {regionInfo}
                 </p>
@@ -36,7 +36,7 @@ const Region = ({ regionName, regionInfo, cityInfo,regionPhoto }) => {
                             moneyLevel={city.quickInfo.$level}
                             vibes={city.quickInfo.vibes}
                             images={city.images}
-                            regionPhoto={regionPhoto}
+                            cityPreviewImage={city.cityPreviewImage}
 
                         />
                     </Link>

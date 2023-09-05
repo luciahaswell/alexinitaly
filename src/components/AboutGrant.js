@@ -4,7 +4,7 @@ function AboutGrant() {
     return (
         <div>
             <div className='titleSection'>
-                <h1 className='pageTitle'>About The Grant</h1>
+                <h1 className='pageTitle'>ABOUT THE GRANT</h1>
                 <div className='grantInfo'>
                     <h4>Who are the Baranciks?</h4>
                     <p>

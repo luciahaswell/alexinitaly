@@ -19,7 +19,7 @@ function TravelHome() {
     return (
         <div>
             <div className='titleSection'>
-                <h1 className='pageTitle'>Travel With Me</h1>
+                <h1 className='pageTitle'>TRAVEL WITH ME</h1>
             </div>
             <div className='test'>
                 <div className='travelSection'>

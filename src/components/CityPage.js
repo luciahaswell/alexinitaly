@@ -11,7 +11,7 @@ const CityPage = ({ cityName, aboutTheCity, whereToStay, whatToEat, whatToDo, to
                 onClick={() => navigate(-1)}>
                 <h4>{`< ${regionName}`}</h4>
             </div>
-            <h1>{cityName}</h1>
+            <h1>{cityName.toUpperCase()}</h1>
             <Carousel imageList={images} />
 
             <h3>About the City:</h3>
@@ -27,7 +27,7 @@ const CityPage = ({ cityName, aboutTheCity, whereToStay, whatToEat, whatToDo, to
                         {`${location.locationName}`}
 
                     </a>
-                        {`: ${location.description}`}
+                        {location.description.length === 0 ? "" :`: ${location.description}`}
                 </p>
             )}
 
@@ -39,13 +39,13 @@ const CityPage = ({ cityName, aboutTheCity, whereToStay, whatToEat, whatToDo, to
             <h4>Restaurants:</h4>
             {whatToEat.restaurants.map((place) =>
                 <p>{'-'}
+                {place.link.length === 0 ? place.name :
                     <a href={place.link}
                         target="_blank"
                         rel="noreferrer"
                         >
                             {`${place.name}`}
-   
-                    </a>
+                    </a>}
                 </p>
             )}
 
@@ -60,8 +60,6 @@ const CityPage = ({ cityName, aboutTheCity, whereToStay, whatToEat, whatToDo, to
             <h3>Favorite Memory:</h3>
             <p>{favMemory}</p>
 
-            <h3>Through My Eyes:</h3>
-            <p>{tiktokLink}</p>
         </div>
     );
 }
