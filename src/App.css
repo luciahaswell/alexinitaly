@@ -435,6 +435,7 @@ h3 .regionLink:hover {
   letter-spacing: 2px;
 }
 
+
 /* ------------- responsive design for city preview ------------*/
 
 @media only screen and (max-width: 650px){
@@ -485,6 +486,16 @@ h3 .regionLink:hover {
   padding: 0 120px;
 }
 
+.moneyLevel{
+  display: inline-flex;
+  background-color: #a2a895;
+  text-align: center;
+  justify-content: center;
+}
+
+.greyDollar{
+  color: rgb(113, 113, 113);
+}
 
 
 /* ------------ city page -----------------*/
@@ -621,11 +632,11 @@ h3 .regionLink:hover {
   height: 250px;
   width: 600px;
   background-color: beige;
-  margin: 15px auto;
+  margin: 2rem auto 3rem;
 }
 
 .grantInfo {
-  margin: 5%;
+  margin: 0 5% 2%;
   color: white;
 }
 

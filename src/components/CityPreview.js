@@ -13,6 +13,14 @@ function CityPreview({ cityName, index, vibes, moneyLevel,cityPreviewImage}) {
         setIsHovered(false);
     }
 
+    let placeholderDollar = "";
+    if(moneyLevel.length < 5){
+      let numExtra = 5 - moneyLevel.length; 
+      while(numExtra > 0){
+        placeholderDollar = placeholderDollar + "$";
+        numExtra--;
+      }
+    } 
 
 
     return (
@@ -35,9 +43,13 @@ function CityPreview({ cityName, index, vibes, moneyLevel,cityPreviewImage}) {
   
         {isHovered && (
           <div className="hoverDiv">
-            <h2 classname='hoverCityTitle'>{cityName.toUpperCase()}</h2>
+            <h2 className='hoverCityTitle'>{cityName.toUpperCase()}</h2>
             <h4>{`vibes: ${vibes}`}</h4>
-            <h4>{moneyLevel}</h4>
+            <div className='moneyLevel'>
+              <h4 className='whiteDollar'>{moneyLevel}</h4>
+              <h4 className='greyDollar'>{placeholderDollar}</h4>
+            </div>
+            
           </div>
         )}
       </div>

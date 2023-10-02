@@ -36,7 +36,7 @@ const Home = () => {
                     key={currentIndex}
                     in={isEnter}
                     timeout={500}
-                    classNames='imageChange'                >
+                    classNames='imageChange'>
                     <img
                         src={homePageImages[currentIndex]}
                         className={`splashImage`}

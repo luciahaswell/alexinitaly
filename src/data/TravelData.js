@@ -5,7 +5,7 @@ const locationData = [
         "cityInfo": [
             {
                 "cityName": "Parma",
-                "cityPreviewImage": require("../media/regions/emilia-romagna/parma/IMG_1089.jpg"),
+                "cityPreviewImage": require("../media/regions/emilia-romagna/parma/IMG_1055.jpg"),
                 "quickInfo": {
                     "vibes": "Foodie Paradise that is underrated and less visited than some other nearby cities like Milan or Florence.",
                     "$level": "$$$"
@@ -71,7 +71,7 @@ const locationData = [
                     require("../media/regions/emilia-romagna/parma/IMG_1009.jpg"),
                     require("../media/regions/emilia-romagna/parma/IMG_1055.jpg"),
                     require("../media/regions/emilia-romagna/parma/IMG_1057.jpg"),
-                    require("../media/regions/emilia-romagna/parma/IMG_1060.jpg"),
+
                     require("../media/regions/emilia-romagna/parma/IMG_1082.jpg"),
                     require("../media/regions/emilia-romagna/parma/IMG_1089.jpg")
                 ]
@@ -79,7 +79,7 @@ const locationData = [
 
             {
                 "cityName": "Bologna",
-                "cityPreviewImage": require("../media/regions/emilia-romagna/bologna/IMG_1116.jpg"),
+                "cityPreviewImage": require("../media/regions/emilia-romagna/bologna/IMG_1118.jpg"),
                 "quickInfo": {
                     "vibes": "Cool young city with the most incredible food scene.",
                     "$level": "$$$"
@@ -128,7 +128,7 @@ const locationData = [
         "cityInfo": [
             {
                 "cityName": "Florence",
-                "cityPreviewImage": require("../media/regions/tuscany/florence/IMG_0268.jpg"),
+                "cityPreviewImage": require("../media/regions/tuscany/florence/IMG_0239.jpeg"),
                 "quickInfo": {
                     "vibes": "Touristy, artsy, iconic",
                     "$level": "$$$$"
@@ -181,7 +181,7 @@ const locationData = [
 
             {
                 "cityName": "Siena",
-                "cityPreviewImage": require("../media/regions/tuscany/siena/IMG_0359.jpg"),
+                "cityPreviewImage": require("../media/regions/tuscany/siena/IMG_0484.jpg"),
                 "quickInfo": {
                     "vibes": "Medieval, charming, historic– a little gem of a city",
                     "$level": "$$$"
@@ -242,7 +242,7 @@ const locationData = [
         "cityInfo": [
             {
                 "cityName": "Gallano",
-                "cityPreviewImage": require("../media/regions/umbria/rasiglia/IMG_0933.jpg"),
+                "cityPreviewImage": require("../media/regions/umbria/rasiglia/IMG_0950.jpg"),
                 "quickInfo": {
                     "vibes": "Medieval. Idyllic. Serene.",
                     "$level": "$$"
@@ -298,18 +298,22 @@ const locationData = [
                     require("../media/regions/umbria/gallano/IMG_0926.jpg"),
                     require("../media/regions/umbria/gallano/IMG_2208.jpg"),
                     require("../media/regions/umbria/gallano/IMG_2212.jpg"),
-                    require("../media/regions/umbria/gallano/IMG_2236.jpg")
+                    require("../media/regions/umbria/gallano/IMG_2236.jpg"),
+                    require("../media/regions/umbria/bevagna/IMG_0905.jpg"),
+                    require("../media/regions/umbria/foligno/IMG_2202.jpg"),
+                    require("../media/regions/umbria/rasiglia/IMG_0950.jpg"),
+                    require("../media/regions/umbria/rasiglia/FullSizeRender1.jpg"),
                 ]
             }
         ]
     },
     {
-        "regionName": "Le Marche",
+        "regionName": "Marche",
         "aboutTheRegion": "Immaculate. Undiscovered. Quaint. Could be beachy or countryside.",
         "cityInfo": [
             {
                 "cityName": "Ancona",
-                "cityPreviewImage": require("../media/regions/le marche/ancona/IMG_1247.jpg"),
+                "cityPreviewImage": require("../media/regions/marche/ancona/IMG_1247.jpg"),
                 "quickInfo": {
                     "vibes": "Local Gem, Beachy, affordable",
                     "$level": "$"
@@ -405,21 +409,21 @@ const locationData = [
                 "toddlerTips": ["We stayed at Agriturismo Gens Camuria which had a pool and playground on site for our toddler to play and stay occupied. These rooms also had a kitchen and fridge so it was easy to keep snacks and food ready. I would also suggest going to Marcelli beach with a toddler or young kids because they are smaller rocks/sandy beaches with umbrellas and chairs. All the beach clubs have restaurants there so you don’t have to worry about packing for a big day like in America."],
                 "tiktokLink": "",
                 "images": [
-                    require("../media/regions/le marche/ancona/IMG_0584.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_1145.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_1174.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_1216.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_1219.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_1222.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_1247.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_2388.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_2696.JPG"),
-                    require("../media/regions/le marche/ancona/IMG_2938.JPG"),
-                    require("../media/regions/le marche/ancona/IMG_2942.JPG"),
-                    require("../media/regions/le marche/ancona/IMG_2967.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_2984.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_3020.jpg"),
-                    require("../media/regions/le marche/ancona/IMG_6323.JPG")
+                    require("../media/regions/marche/ancona/IMG_0584.jpg"),
+                    require("../media/regions/marche/ancona/IMG_1145.jpg"),
+                    require("../media/regions/marche/ancona/IMG_1174.jpg"),
+                    require("../media/regions/marche/ancona/IMG_1216.jpg"),
+                    require("../media/regions/marche/ancona/IMG_1219.jpg"),
+                    require("../media/regions/marche/ancona/IMG_1222.jpg"),
+                    require("../media/regions/marche/ancona/IMG_1247.jpg"),
+                    require("../media/regions/marche/ancona/IMG_2388.jpg"),
+                    require("../media/regions/marche/ancona/IMG_2696.JPG"),
+                    require("../media/regions/marche/ancona/IMG_2938.JPG"),
+                    require("../media/regions/marche/ancona/IMG_2942.JPG"),
+                    require("../media/regions/marche/ancona/IMG_2967.jpg"),
+                    require("../media/regions/marche/ancona/IMG_2984.jpg"),
+                    require("../media/regions/marche/ancona/IMG_3020.jpg"),
+                    require("../media/regions/marche/ancona/IMG_6323.JPG")
                 ]
             }]
     },

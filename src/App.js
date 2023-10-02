@@ -63,30 +63,3 @@ function App() {
 export default App;
 
 
-/*
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import Home from './Home/Home';
-import Travel from './Travel/Travel';
-import AboutMe from './AboutMe/AboutMe';
-import AboutGrant from './AboutGrant/AboutGrant';
-import NavBar from './NavBar';
-
-function App() {
-  return (
-    <div className="App">
-      <NavBar/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutme" element={<AboutMe />} />
-          <Route path="/aboutgrant" element={<AboutGrant />} />
-          <Route path="/travel/*" element={<Travel />} />
-            
-        </Routes>
-    </div>
-  );
-}
-
-export default App;
- */
